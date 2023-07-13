@@ -1,0 +1,27 @@
+@import "./variables.module.scss";
+
+.footer{
+    width: 100%;
+    padding: 35px 45px;
+    background-color: $secondary-background-color;
+
+    .container{
+
+        .title{
+            margin-bottom: 25px;
+        }
+
+        .links{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            column-gap: 70px;
+            row-gap: 10px;
+
+            .link{
+
+                color: $main-text-color;
+                text-decoration: none;
+            }
+        }
+    }
+}

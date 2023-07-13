@@ -1,0 +1,16 @@
+@import "./variables.module.scss";
+
+
+body{
+    margin: 0;
+    padding: 0;
+    color: $main-text-color;
+    background-color: $background-color;
+    min-height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

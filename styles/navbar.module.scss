@@ -1,0 +1,35 @@
+
+.header{
+    padding: 34px 46px 34px 112px;
+}
+
+.navbar, .navbar *{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar{
+    gap: 100px;
+    
+    .content{
+        gap: 70px;
+
+        .languages{
+            gap: 20px;
+
+            .language{
+                cursor: pointer;
+
+                &.selected{
+                    text-decoration: underline;
+                    text-underline-offset: 4px;
+                }
+            }
+        }
+        .button{
+            cursor: pointer;
+        }
+    }
+
+}

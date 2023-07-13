@@ -1,0 +1,150 @@
+@import './variables.module.scss';
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.asideText{
+  width: 100%;
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 45px;
+  text-transform: uppercase;
+  position: absolute;
+
+  &.right{
+    writing-mode: vertical-rl;
+    right: 0;
+    top: 0;
+  }
+
+  &.left{
+    writing-mode: vertical-lr;
+    left: 0;
+    top: 0;
+  }
+}
+
+.hero{
+  width: 100%;
+  padding-left: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  
+  .content{
+    width: 100%;
+    max-width: 460px;
+
+    .title{
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .text{
+      font-size: 20px;
+    }
+  }
+}
+
+.doctors{
+  width: 100%;
+  margin-bottom: 100px;
+  position: relative;
+  padding: 130px 100px 0 30px;
+}
+
+.about{
+  width: 100%;
+  margin-bottom: 70px;
+  position: relative;
+  padding: 30px 30px 0 120px;
+
+  .background{
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 50px 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+
+    &.first{
+      background-image: url("/background_1.png");
+    }
+
+    &.second{
+      background-image: url("/background_2.png");
+      background-position: left;
+      background-size: 50% 100%;
+    }
+
+    &.third{
+      background-image: url("/background_3.png");
+    }
+
+    .textContainer{
+
+      display: flex;
+      flex-direction: column;
+
+      &:first-child(){
+        align-items: flex-start;
+      }
+
+      &:last-child{
+        align-items: flex-end;
+
+        .text, .title{
+          text-align: right;
+        }
+      }
+
+      .title{
+        font-size: 40px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+
+      .text{
+        max-width: 450px;
+        font-size: 20px;
+        letter-spacing: 0.2px;
+      }
+
+    }
+  }
+
+}
+
+.prices{
+  
+}
+
+
+@media(min-width: 1440px){
+  .hero{
+    img{
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+    }
+  }
+}
+
+@media(max-width: 1024px){
+  .hero{
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
