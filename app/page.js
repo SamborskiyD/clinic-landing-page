@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Carusel from '@/components/Carusel'
 import styles from '@/styles/mainPage.module.scss'
+import PriceBox from '@/components/PriceBox'
 
 export default function Home() {
   return (
@@ -62,6 +63,11 @@ export default function Home() {
             </p>
           </div>
         </div>
+      </section>
+
+      <section className={styles.prices}>
+        <PriceBox headerText={"Traumatology"}/>
+        <h2 className={`${styles.asideText} ${styles.right} `}>Prices</h2> 
       </section>
     </main>
   )

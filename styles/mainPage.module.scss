@@ -10,6 +10,7 @@
 }
 
 .asideText{
+  max-width: 90px;
   width: 100%;
   font-size: 60px;
   font-weight: 600;
@@ -126,7 +127,15 @@
 }
 
 .prices{
-  
+  width: 100%;
+  margin-bottom: 100px;
+  position: relative;
+  padding: 80px 120px 0 45px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 
